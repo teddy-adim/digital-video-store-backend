@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: digital-video-store-backend
+    env: java
+    plan: free
+    branch: main
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/digital-video-store-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: SPRING_DATA_MONGODB_URI
+        value: mongodb+srv://admin:teddy123@cluster0.laqxxwk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
