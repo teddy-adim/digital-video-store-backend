@@ -1,7 +1,7 @@
 services:
   - type: web
     name: digital-video-store-backend
-    plan: free
+    repo: https://github.com/teddy-adim/digital-video-store-backend.git
     branch: main
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/digital-video-store-0.0.1-SNAPSHOT.jar
