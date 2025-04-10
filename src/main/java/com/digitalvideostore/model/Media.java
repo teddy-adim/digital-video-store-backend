@@ -9,7 +9,7 @@ public class Media {
     private String id;
     private String title;
     private String synopsis;
-    private String type; // movie or tvshow
+    private String type; 
     private double rentPrice;
     private double buyPrice;
     private boolean featured;
@@ -53,7 +53,7 @@ public class Media {
         return largePoster;
     }
 
-    // ✅ Setters
+
     public void setId(String id) {
         this.id = id;
     }
