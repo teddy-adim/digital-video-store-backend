@@ -1,7 +1,6 @@
 services:
   - type: web
     name: digital-video-store-backend
-    env: java
     plan: free
     branch: main
     buildCommand: ./mvnw clean package
